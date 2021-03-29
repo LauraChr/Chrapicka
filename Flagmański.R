@@ -18,3 +18,7 @@ horoskop = function(imię, miesiąc){
   }
 }
 horoskop("Krzysztof", 5)
+
+
+
+
