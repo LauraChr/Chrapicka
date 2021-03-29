@@ -17,8 +17,17 @@ horoskop = function(imię, miesiąc){
     paste("Osoba o imieniu", imię, "będzie miała jutro nieszczęście")
   }
 }
-horoskop("Krzysztof", 5)
+horoskop("Zbigniew", 5)
 
-
-
-
+#Zadanie 3
+horoskop = function(imię, miesiąc){
+  if (miesiąc %% 2 == 0){
+    paste("Osoba o imieniu", imię, "będzie miała jutro szczęście")
+  }
+  else {
+    paste("Osoba o imieniu", imię, "będzie miała jutro nieszczęście")
+  }
+  else if (pattern = "\^Z|K|M"){
+    paste("Osoba o imieniu", imię, "będzie miała jutro szczęście")
+  }
+}
