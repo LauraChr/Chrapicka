@@ -1,3 +1,4 @@
+#Zadanie 1
 tekst1 = "TERYT 18; pokarpackie; RzeszóW; 0.2 He; A"
 tekst2 = "TERYT 22; pomorskie; Gdańsk; 12 C ; B"
 tekst1
