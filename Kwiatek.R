@@ -26,5 +26,9 @@ horoskop = function(imie, miesiac){
     cat(paste("Osoba o imieniu", imie, "będzie miała jutro nieszczęście"))
   }
 }
-horoskop("J", 2)
-
+horoskop("Jacek", 1)
+# zadanie 4
+dane = "2019-03-11: 23.5, 19/03/12: 12.7, 2019.03.13: 11.1, 2019-marzec-14: 14.3"
+str_extract_all(dane, pattern ="")
+ 
+  
