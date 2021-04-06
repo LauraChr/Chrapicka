@@ -29,7 +29,11 @@ horoskop = function(imie, miesiac){
 horoskop("Jacek", 1)
 # zadanie 4
 dane = "2019-03-11: 23.5, 19/03/12: 12.7, 2019.03.13: 11.1, 2019-marzec-14: 14.3"
-daty_wydzielone = str_extract_all(dane, "[0-9]+[\\-|//.][a-z0-9]+[\\-|//.][0-9]+")
+daty = str_extract_all(dane, "[0-9]+[\\-|//.][a-z0-9]+[\\-|//.][0-9]+")
 # zadanie 5
-wartosci_ = str_extract_all(dane, pattern = "[\\:] [0-9]+[\\.]+[0-9]")
+wartosci = str_extract_all(dane, pattern = "[1-2]+[1-5]+[\\.]+[0-9]")
+wartosci = as.data.frame(wartosci)
+daty = as.data.frame(daty)
+wszystko = cbind(daty, wartosci)
+wszystko
 
