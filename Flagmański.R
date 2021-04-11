@@ -17,17 +17,28 @@ horoskop = function(imię, miesiąc){
     paste("Osoba o imieniu", imię, "będzie miała jutro nieszczęście")
   }
 }
-horoskop("Zbigniew", 5)
 
 #Zadanie 3
 horoskop = function(imię, miesiąc){
-  if (miesiąc %% 2 == 0){
+  if (str_detect(imię, pattern = "^Z|^K|^M") == TRUE){
     paste("Osoba o imieniu", imię, "będzie miała jutro szczęście")
   }
-  else {
+  else if (miesiąc %% 2 == 0){
+    paste("Osoba o imieniu", imię, "będzie miała jutro szczęście")
+  }
+  else if (miesiąc %% 1 == 0) {
     paste("Osoba o imieniu", imię, "będzie miała jutro nieszczęście")
   }
-  else if (pattern = "\^Z|K|M"){
-    paste("Osoba o imieniu", imię, "będzie miała jutro szczęście")
-  }
 }
+
+horoskop("Zbigniew", 5)
+
+#Zadanie 4
+
+tekst3 = "2019-03-11: 23.5, 19/03/12: 12.7, 2019.03.13: 11.1, 2019-marzec-14: 14.3"
+tekst3
+str_sub(tekst3, start = c(1,19,35,53), end = c(10,26,44,66))
+
+#Zadanie 5
+tekst3 = "2019-03-11: 23.5, 19/03/12: 12.7, 2019.03.13: 11.1, 2019-marzec-14: 14.3"
+str_sub(tekst3, start = c(13,29,47,69), end = c(16,32,50,72))
