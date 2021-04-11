@@ -1,14 +1,16 @@
-#zadanie_6.2
+#zadanie_6.2.
 
-horoskop = function (imie, miesiac) {
-  if ((miesiac %% 2) == 0) {
+horoskop = function (name, month) {
+  if ((month %% 2) == 0) {
     
-    print (paste("Osoba o imieniu ", imie, " będzie miała jutro szczęście"))
+    print (paste("Osoba o imieniu ", name,
+                 " bedzie miala jutro szczescie"))
   } else {
     
-    print (paste("Osoba o imieniu ", imie, " będzie miała jutro nieszczęście"))
+    print (paste("Osoba o imieniu ", name,
+                 " bedzie miala jutro nieszczescie"))
   }
 }
 
 x = "Kasia"
-horoskop (x, 11)
+horoskop(x, 12)
